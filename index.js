@@ -10,7 +10,7 @@ const sorter = function (arrayNama, sortingLogic) {
   let sortedArrayWithNumber = [];
   const sortedArray = sortingLogic(arrayNama);
   for (let index = 0; index < sortedArray.length; index++) {
-    sortedArrayWithNumber[index] = `${index}. ${sortedArray[index]}`;
+    sortedArrayWithNumber[index] = `${index + 1}. ${sortedArray[index]}`;
   }
   return sortedArrayWithNumber;
 };
